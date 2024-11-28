@@ -1,238 +1,234 @@
-*{
-    padding: 0%;
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-
-body {
-    margin: 0;
-    padding: 20px 20px 20px;
-    background-color: #ffffff;
-    display: block;
-}
-.section1{
- background-color: rgb(243, 197, 97);
-}
-section{
-    display:flex;
-    height: 150vh;
-    border-radius: 6px;
-}
-aside.left{
-    width: 20%;
-    padding:20px;
-    display: block;
-    background-color: rgb(138, 163, 237);
-    padding-top: 200px;
-    border-radius: 6px 0px 0px 6px;
-    height: 56vh;
-    
-}
-
-aside.left ul{
-    list-style-type: none;
-    padding: 10px;
-    display: flexbox;
-    color: #000000;
-}
-aside.left ul a{
-    text-decoration: none;
-    color: #333;
-    display: flexbox;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    box-sizing: border-box;
-    row-gap: 60px;
-}
-.image {
-    display: flex;
-    justify-content: center;  
-    align-items: center;
-}
-
-.image img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    
-}
-
-
-aside.right{
- width: 80%;
- background-color: #d8e3e3;
- padding: 20px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- height: 80vh;
-}
-
-div.text1 h2 h3{
-    color: #000;
-    align-items: center;
-
-}
-.text2{
-    padding: 10px 10px 10px 10px;
-}
-.About dl,dt,dd{
+/* General Reset */
+* {
+    list-style: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    ul li{
+        text-wrap: wrap;
+    }
 }
-.About p{
-    text-align: left;
-    padding-left:30px;
-    line-height: 1.2;
-    font: size 1.5em;
+
+/* Body */
+body {
+    margin: 0;
+    padding: 10px 0px 10px 10px;
+    background-color: #f9f9f9;
+
 }
-.icon a i{
- text-size-adjust: 40px;
- padding-bottom: 10px;
- justify-content: center;
- 
-}
-/* Styling the button container */
-.btn1 {
+
+/* Section 1 */
+.section1 {
     display: flex;
-    justify-content: center; /* Center align the button */
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+aside.left {
+    width: 20%;
+    padding: 20px;
+    background-color: rgb(58, 181, 125);
+    border-radius: 6px 0 0 6px;
+}
+
+aside.left ul {
+    list-style: none;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside.left ul a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+aside.left ul a:hover {
+    color: #000;
+}
+
+/* Right Section */
+aside.right {
+    flex: 1;
+    gap: 2px;
+    padding: 20px;
+    background-color: #d8e3e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Profile Image */
+.image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+/* Text */
+.text1 h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #000;
+}
+
+.text1 h3 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #555;
     margin-top: 10px;
 }
 
-/* Styling the button */
+/* Icons */
+.icon a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.icon a:hover {
+    color: #000;
+}
+
+/* Button */
+.btn1 {
+    margin-top: 20px;
+}
+
 .btn1 button {
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
+    background-color: #4CAF50;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-/* Add hover effect */
 .btn1 button:hover {
-    background-color: #45a049; /* Slightly darker green */
+    background-color: #45a049;
 }
 
-.part1{
-    display: flexbox;
-    flex-direction: column;
-    background-color: rgb(199, 220, 144);
-}
-.section2-skill{
-    padding: 20px 20px 20px;
-
-}
-.section2-skill h2{
-    align-items: center;
-}
-.frame div{
-    display: flex;
-    justify-content: center;
-    grid-template-rows: 10px;
-    
-}
-
-.Font-end{
-    border: 10px solid blue;
-    border-width: 2px;
-    box-shadow: #333 ;
-    background-color: #765757;
-    border-radius: 8px;
-    text-decoration: none;
-    flex-direction: column;
-}
-.Back-end{
-    flex-direction: column;
-    border: 10px solid blue;
-    border-width: 2px;
-    box-shadow: #333 ;
-    background-color: #765757;
-    border-radius: 8px;
-    text-decoration: none;
-}
-.PL{
-    flex-direction: column;
-    text-decoration: none;
-    border: 10px solid blue;
-    border-width: 2px;
-    box-shadow: #333 ;
-    background-color: #765757;
-    border-radius: 8px;
-    
-}
-.section2-skill{
-    align-self:center;
-    align-items: center;
+/* Skills Section */
+.section2-skill {
+    padding: 40px 20px;
     background-color: #d8e3e3;
-}
-.section2-skill div h2 {
-    text-align: center;
-
-}
-.skill{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.section2-skill h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .frame {
-    display: flex;
-    justify-content:space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px 20px 20px 100px;
-    align-items: center;
+    width: 100%;
 }
 
-.Font-end, .Back-end, .PL, .DM,.os,.other{
-    flex: 1;
-    padding: 30px;
+/* Skill Cards */
+.Font-end, .Back-end, .PL, .DM, .os, .other {
+    padding: 20px;
     color: #fff;
-    border: 2px solid blue;
     background-color: #765757;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    height: 190px;
-    width: 120px;
-    
-
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.Font-end h3, .Back-end h3, .PL h3,.DM h3 .os ul li h3,.other ul li h3{
+.Font-end:hover, .Back-end:hover, .PL:hover, .DM:hover, .os:hover, .other:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.Font-end h3, .Back-end h3, .PL h3, .DM h3, .os h3, .other h3 {
     font-size: 1.5em;
-    padding-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.Font-end ul, .Back-end ul, .PL ul, .DM ul, .os ul, .other ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Font-end ul li, .Back-end ul li, .PL ul li, .DM ul li, .os ul li, .other ul li {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #e0e0e0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-.Font-end ul, .Back-end ul, .PL ul,.other ul,.os ul,.other ul {
-    list-style-type: none;
-    padding: 0;
-    padding-left: 10px;
-}
-.DM ul {
-    list-style: none;
+footer h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-.Font-end ul li, .Back-end ul li, .PL ul li .DM ul li,.os ul li{
-    font-size: 1.1em;
-    margin: 8px 0;
-    color: #e0e0e0;
-    
+footer .icon a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: color 0.3s;
 }
-.work h3{
-    padding-left: 10px ;
+
+footer .icon a:hover {
+    color: #f9a825;
 }
-.Dm ul,.Pg ul,.WD1 ul,.WD ul{
+.WD1 img,.WD2 img,.WD3 img,.WD4 img{
+    height: 80px;
+    width: 80px;
+    align-self: center;
+}
+.WD1 ul {
     list-style: none;
 }
-.Dm ul li,.Pg ul li,.WD1 ul li,.WD ul li{
-    padding-left: 10px;
+.WD1 ul li h4,.WD2 ul li h4,.WD3 ul li h4,.WD4 ul li h4{ 
+    text-align: center;
+
 }
-.Dm ul li ,.Pg ul li ,.WD1 ul li,.WD ul li{
+.WD1 ul li,.WD2 ul li,.WD3 ul li,.WD4 ul li{
+    text-align:justify;
+    gap: 10px;
+    text-overflow: clip;
+    text-wrap: wrap;
+    font-size: small;
     padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.WD1,.WD2,.WD3,.WD4 {
+    border: #555;
+    background: #8cd590;
+    border-radius: 6px;
 }
