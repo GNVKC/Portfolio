@@ -1,7 +1,14 @@
+*{
+    padding: 0%;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
 body {
     margin: 0;
     padding: 20px 20px 20px;
-    background-color: #ededed;
+    background-color: #ffffff;
     display: block;
 }
 .section1{
@@ -26,7 +33,6 @@ aside.left{
 aside.left ul{
     list-style-type: none;
     padding: 10px;
-
     display: flexbox;
     color: #000000;
 }
@@ -38,7 +44,7 @@ aside.left ul a{
     flex-direction: column;
     gap: 30px;
     box-sizing: border-box;
-    row-gap: 50px;
+    row-gap: 60px;
 }
 .image {
     display: flex;
@@ -56,7 +62,7 @@ aside.left ul a{
 
 aside.right{
  width: 80%;
- background-color: #f4f4f4;
+ background-color: #d8e3e3;
  padding: 20px;
  display: flex;
  flex-direction: column;
@@ -70,9 +76,163 @@ div.text1 h2 h3{
     align-items: center;
 
 }
+.text2{
+    padding: 10px 10px 10px 10px;
+}
+.About dl,dt,dd{
+    margin: 0;
+    padding: 0;
+}
+.About p{
+    text-align: left;
+    padding-left:30px;
+    line-height: 1.2;
+    font: size 1.5em;
+}
+.icon a i{
+ text-size-adjust: 40px;
+ padding-bottom: 10px;
+ justify-content: center;
+ 
+}
+/* Styling the button container */
 .btn1 {
-    color: #f4f4f4;
-    background-color: rgb(137, 98, 47);
-    border: #333;
+    display: flex;
+    justify-content: center; /* Center align the button */
+    margin-top: 10px;
+}
+
+/* Styling the button */
+.btn1 button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+.btn1 button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+.part1{
+    display: flexbox;
+    flex-direction: column;
+    background-color: rgb(199, 220, 144);
+}
+.section2-skill{
+    padding: 20px 20px 20px;
+
+}
+.section2-skill h2{
+    align-items: center;
+}
+.frame div{
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 10px;
     
+}
+
+.Font-end{
+    border: 10px solid blue;
+    border-width: 2px;
+    box-shadow: #333 ;
+    background-color: #765757;
+    border-radius: 8px;
+    text-decoration: none;
+    flex-direction: column;
+}
+.Back-end{
+    flex-direction: column;
+    border: 10px solid blue;
+    border-width: 2px;
+    box-shadow: #333 ;
+    background-color: #765757;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.PL{
+    flex-direction: column;
+    text-decoration: none;
+    border: 10px solid blue;
+    border-width: 2px;
+    box-shadow: #333 ;
+    background-color: #765757;
+    border-radius: 8px;
+    
+}
+.section2-skill{
+    align-self:center;
+    align-items: center;
+    background-color: #d8e3e3;
+}
+.section2-skill div h2 {
+    text-align: center;
+
+}
+.skill{
+    align-items: center;
+}
+
+.frame {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 20px;
+    padding: 20px 20px 20px 100px;
+    align-items: center;
+}
+
+.Font-end, .Back-end, .PL, .DM,.os,.other{
+    flex: 1;
+    padding: 30px;
+    color: #fff;
+    border: 2px solid blue;
+    background-color: #765757;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    height: 190px;
+    width: 120px;
+    
+
+}
+
+.Font-end h3, .Back-end h3, .PL h3,.DM h3 .os ul li h3,.other ul li h3{
+    font-size: 1.5em;
+    padding-top: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.Font-end ul, .Back-end ul, .PL ul,.other ul,.os ul,.other ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 10px;
+}
+.DM ul {
+    list-style: none;
+}
+
+.Font-end ul li, .Back-end ul li, .PL ul li .DM ul li,.os ul li{
+    font-size: 1.1em;
+    margin: 8px 0;
+    color: #e0e0e0;
+    
+}
+.work h3{
+    padding-left: 10px ;
+}
+.Dm ul,.Pg ul,.WD1 ul,.WD ul{
+    list-style: none;
+}
+.Dm ul li,.Pg ul li,.WD1 ul li,.WD ul li{
+    padding-left: 10px;
+}
+.Dm ul li ,.Pg ul li ,.WD1 ul li,.WD ul li{
+    padding-left: 10px;
 }
